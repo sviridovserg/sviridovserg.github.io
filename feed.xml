@@ -11,8 +11,7 @@ layout: null
         <description>{{ site.description | xml_escape }}</description>
         <language>en-AU</language>
         <copyright>Copyright {{ site.copyright | xml_escape }}</copyright>
-        <managingEditor>{{ site.author.email }} ({{ site.author.name }})</managingEditor>
-        <webMaster>{{ site.author.email }} ({{ site.author.name }})</webMaster>
+        <managingEditor>{{ site.author.name }}</managingEditor>
         <docs>http://validator.w3.org/feed/docs/rss2.html</docs>
         <image>
             <url>{{ site.url }}{{ site.baseurl }}{{ site.avatar }}</url>
@@ -24,7 +23,7 @@ layout: null
             <title>{{ post.title | xml_escape }}</title>
             <link>{{ site.url }}{{ post.url }}</link>
             <description><![CDATA[{{ post.description }}]]></description>
-            <author>{{ site.author.email }} ({{ site.author.name }})</author>
+            <author>{{ site.author.name }}</author>
             <!-- <comments></comments> -->
             <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>

@@ -24,7 +24,7 @@ avatar: public/images/avatar.png
 author:
   name: 'Sergei Sviridov'
   
-  email: 
+  email: temp@t.com
 
 # Pagination
 paginate: 5
