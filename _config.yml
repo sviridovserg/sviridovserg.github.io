@@ -1,0 +1,36 @@
+# Dependencies
+markdown: kramdown
+highlighter: rouge
+
+# Gems
+gems: [jekyll-paginate]
+
+# Permalinks
+permalink: pretty
+
+# Setup
+title: "Sergei Sviridov's Blog"
+description: "A blog about my development experiences"
+tagline: 'Some random explorations and ideas...'
+url: http://sergeisviridov.com
+baseurl: /
+
+# Feed
+copyright: '2016 Sergei Sviridov'
+feed: feed.xml
+avatar: public/images/avatar.png
+
+# Author
+author:
+  name: 'Sergei Sviridov'
+  
+  email: 
+
+# Pagination
+paginate: 5
+
+# Custom Variables
+version: 0.0.2
+
+github:
+  repo: https://github.com/sviridovserg
