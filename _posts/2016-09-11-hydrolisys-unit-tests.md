@@ -9,7 +9,7 @@ So you've started your first polymer project and it's going well. After a while 
 
 ##What is polymer analyzer?
 
-[Polymer analyzer](https://github.com/Polymer/polymer-analyzer "Polymer analyzer") is a javascript library developed by Google to perform static analysis for web components. Untill version 2 it was called Hydrolysis.
+[Polymer analyzer](https://github.com/Polymer/polymer-analyzer "Polymer analyzer") is a javascript library developed by Google to perform static analysis for web components. Untill version 2 it was called Hydrolysis. In this article 1st version is used.
 
 ##So, how can we use it?
 
@@ -117,3 +117,5 @@ function getUnitTests(repoPath, commitHash) {
 }
 
 {% endhighlight %}
+
+Finally, we can use getUnitTests function in out build process. For instance, it can be a step in our gulp build that executes javascript unit tests to verify build.
