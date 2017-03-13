@@ -2,10 +2,7 @@
 layout: post
 title:  "Blog on github pages with jekyll in docker for windows users"
 date:   2017-03-04 16:00:00
-categories: 
-    - jekyll
-    - github pages
-    - docker
+
 tags: 
     - jekyll
     - github pages
