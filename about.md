@@ -4,7 +4,7 @@ title: About Me
 ---
 
 <p class="message">
-    I am a software developer living in Sydney, Australia who is passionate about developing and designing web-based applications using HTML, CSS and JS on client side and .NET stack on the backend.
+    I am a software developer living in Sydney, Australia who is passionate about developing and designing web-based applications using HTML, CSS and JS on client side and .NET stack on the backend, about Agile process and people interactions.
 </p>
 
 I'm currently working as a Senior Developer with a lot of amazing guys with versatile experience and broad knowledge at

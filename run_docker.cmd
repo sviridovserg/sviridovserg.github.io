@@ -1,0 +1,1 @@
+ docker run -w /srv/jekyll -v C:\_my\blog\devBlog:/srv/jekyll -p=4000:4000 docker-jekyll

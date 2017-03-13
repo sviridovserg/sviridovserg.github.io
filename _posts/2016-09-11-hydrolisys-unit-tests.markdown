@@ -3,15 +3,19 @@ layout: post
 title:  "Using analyzer to filter unit tests in polymer project"
 date:   2016-09-01 10:00:00
 categories: polymer
+tags: 
+    - polymer
+    - polymer analyzer
+    - polymer hydrolisys
 ---
 
 So you've started your first polymer project and it's going well. After a while you noticed that you have over a hundred of components. Because you're a good developer you write unit tests for your components and run them as part of your CI/CD pipeline. It means that each small change in one component leads to execution of thousand tests and increase in build time. This blog will provide one of the solutions to this issue.
 
-##What is polymer analyzer?
+## What is polymer analyzer?
 
-[Polymer analyzer](https://github.com/Polymer/polymer-analyzer "Polymer analyzer") is a javascript library developed by Google to perform static analysis for web components. Untill version 2 it was called Hydrolysis. In this article 1st version is used.
+[Polymer analyzer](https://github.com/Polymer/polymer-analyzer "Polymer analyzer") is a javascript library developed by Google to perform static analysis for web components. Until version 2 it was called Hydrolysis. In this article 1st version is used.
 
-##So, how can we use it?
+## So, how can we use it?
 
 Analyzer accepts path to html document with Polymer component and provides information about the component and its dependencies. If dependencies are included in the file as links to other html files then analyzer will provide paths to these files. It means that we can build dependency tree for any polymer component.
 
