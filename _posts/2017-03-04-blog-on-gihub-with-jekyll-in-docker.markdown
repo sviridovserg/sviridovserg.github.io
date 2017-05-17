@@ -3,6 +3,8 @@ layout: post
 title:  "Blog on GitHub Pages with Jekyll in Docker for Windows users"
 date:   2017-03-04 16:00:00
 
+desc: Writing a blog that is hosted on github pages with jekyll using docker for windows users
+keywords: jekyll, github pages, docker, widows, blogging
 tags:
     - jekyll
     - GitHub pages
