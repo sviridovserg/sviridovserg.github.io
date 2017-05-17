@@ -98,7 +98,7 @@ function aggregateUnitTests(changeset, unittests, pathToComponent) {
                 resolve(addUnitTests);
             }
         });
-    });
+    }); 
 }
 
 {% endhighlight %}
