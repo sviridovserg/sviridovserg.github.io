@@ -112,7 +112,16 @@ Now we need to setup deployment credentials for our app to be able to give acces
 
 ![Azure deployment credentials](/public/images/posts/4/azure-deployment-cred.PNG){:height="400px" }
 
-Fill in the form with desired user name and password. Keep it near we will need it on the next step for Travis deployment.
+Fill in the form with desired user name and password. Keep it nearby we will need it on the next step for Travis deployment.
+
+Last thing we need to do is to add `.deployment` file to the root of our project to tell Azure which folder contains build artefact is. Add the following content to the file:
+
+```
+[config]
+project = build
+```
+
+Great! Let's move to travis deployment configuration.
 
 ## Travis deployment
 
