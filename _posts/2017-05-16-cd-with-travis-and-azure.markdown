@@ -1,23 +1,23 @@
 ---
 layout: post
-title:  "Continues delivery pipeline using Travis and Azure on the example of React application"
+title:  "Continuous delivery pipeline using Travis and Azure on the example of React application"
 date:   2017-05-16 16:00:00
 
-desc: Continues delivery pipeline using Travis and Azure on the example of React application
-keywords: CD, CI, continues delivery, travis, azure, react, build, deploy, automation, github
+desc: Continuous delivery pipeline using Travis and Azure on the example of React application
+keywords: CD, CI, continuous delivery, travis, azure, react, build, deploy, automation, github
 tags:
     - CD
-    - continues delivery
-    - continues integration
+    - continuous delivery
+    - continuous integration
     - automation
     - travis
     - azure
     - react
 ---
 
-There are a lot of things to consider when you start the development for new application like selecting proper technical stack, architecture, storage mechanism, etc. One of such things is configuring continues delivery pipeline. It is important for the team to introduce it on early stages to be able to release software in short cycles, improving quality and ensuring that the application is reliable.
+There are a lot of things to consider when you start the development for new application like selecting proper technical stack, architecture, storage mechanism, etc. One of such things is configuring continuous delivery pipeline. It is important for the team to introduce it on early stages to be able to release software in short cycles, improving quality and ensuring that the application is reliable.
 
-In this blog post we will learn how to build continues delivery pipeline using [Travis][travis] and [Azure][azure] for simple [React][react] application. You will need [Node][node] and [NPM][npm] or [YARN][yarn] package manager, GitHub, Travis and Azure.
+In this blog post we will learn how to build continuous delivery pipeline using [Travis][travis] and [Azure][azure] for simple [React][react] application. You will need [Node][node] and [NPM][npm] or [YARN][yarn] package manager, GitHub, Travis and Azure.
 
 ## React application
 
@@ -156,9 +156,9 @@ deploy:
   on: production
 ```
 
-Congradulations! You've just setup simple continues delivery pipeline using Travis and Azure. You can expand it later using Azure slots to have staging environments, see [post][azure_slot] for more information.
+Congradulations! You've just setup simple continuous delivery pipeline using Travis and Azure. You can expand it later using Azure slots to have staging environments, see [post][azure_slot] for more information.
 
-In conclusion, in this post we've walked through the process of configuring continues delivery pipeline for React application using Travis and Azure. The pipeline is flexible and can be adapted to applications developed on Java, .Net, Python, Javascript, etc.
+In conclusion, in this post we've walked through the process of configuring continuous delivery pipeline for React application using Travis and Azure. The pipeline is flexible and can be adapted to applications developed on Java, .Net, Python, Javascript, etc.
 
 [travis]:https://travis-ci.org/
 [azure]: https://portal.azure.com
