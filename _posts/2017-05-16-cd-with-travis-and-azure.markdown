@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Continuous delivery pipeline using Travis and Azure on the example of React application"
-abstract: "In this blog post we will learn how to build continuous delivery pipeline using Travis platform for continuous integration and Azure platform for managing different environments and hosting for simple React application"
+abstract: "In this blog post we will learn how to build continuous delivery pipeline for simple React application using Travis platform for continuous integration and Azure platform for managing different environments and hosting. You will need GitHub, Travis and Azure accounts."
 date:   2017-05-16 16:00:00
 
 desc: Continuous delivery pipeline using Travis and Azure on the example of React application

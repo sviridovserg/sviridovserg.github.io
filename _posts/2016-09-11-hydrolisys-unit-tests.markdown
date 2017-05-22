@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Using analyzer to filter unit tests in polymer project"
-abstract: "Filtering unit tests in Polymer project to reduce build time and improve development experience with help of analyzer library from Google"
+abstract: "In Polymer application the number of tests can increase up to several thousands. This will lead to long build times and degraded development experience. In this blog post you will learn how to filter unit tests for Polymer project and run only those tests which are relevant to the set of changes pushed to GitHub. We will do it using Polymer analyzer library from Google."
 date:   2016-09-01 10:00:00
-categories: polymer
+
+desc: Using Polymer analyzer to filter unit tests in Polymer project
+keywords: polymer, polymer analyzer, polymer hydrolisys, unit tests
 tags:
     - polymer
     - polymer analyzer

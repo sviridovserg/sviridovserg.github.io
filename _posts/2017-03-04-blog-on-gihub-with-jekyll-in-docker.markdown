@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Blog on GitHub Pages with Jekyll in Docker for Windows users"
-abstract: "Writing blog posts hosted on GitHub pages with Jekyll and generating it locally without installing anything but Docker for Windows users"
-date:   2017-03-04 16:00:00
+title: "Blog on GitHub Pages with Jekyll in Docker for Windows users"
+abstract: "It is easy to start blogging using GitHub pages hosting and generating your static site using Jekyll. However, setup and configure Jekyll on Windows machine is quite difficult tasks and requires installing several pieces of software like Ruby and Gem. In this post we will discover how to eliminate all these issues and generate and run your static site with hot reload locally using only Docker."
+date: 2017-03-04 16:00:00
 
 desc: Writing a blog that is hosted on github pages with jekyll using docker for windows users
 keywords: jekyll, github pages, docker, widows, blogging

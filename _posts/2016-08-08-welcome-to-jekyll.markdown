@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-abstract: "Jekyll welcome post, here is what you can do on it"
+abstract: "Jekyll welcome post. Read this small blog post to have an idea what Jakyll does."
 date:   2016-08-08 22:06:18
 categories: jekyll update
 ---
