@@ -52,7 +52,7 @@ Now push this application to the GitHub repository.
 
 Go to [Travis][travis] and sign in there with your GitHub account, and turn on the switch for the repository with your React application.
 
-![Enable travis for repository](/public/images/posts/4/repo-enable-travis.PNG)
+![Enable travis for repository](/assets/images/posts/4/repo-enable-travis.PNG)
 
 You should be able to navigate to the builds for the repository by clicking on it in the list of repositories. If you navigate there you should see the empty screen with text **"No Builds for this repository"**.
 
@@ -94,11 +94,11 @@ By default Travis will run build for each branch when new code is pushed.
 
 Now lets create Web Application in Azure where we are going to deploy our React. In [Azure Portal][azure] select  *App Services* in the sidebar
 
-![Azure sidebar](/public/images/posts/4/azure-sidebar.PNG)
+![Azure sidebar](/assets/images/posts/4/azure-sidebar.PNG)
 
 Click Add in the top bar and select *Web App* tile.
 
-![Azure new web app](/public/images/posts/4/azure-new-web-app.PNG){:height="400px" }
+![Azure new web app](/assets/images/posts/4/azure-new-web-app.PNG){:height="400px" }
 
 Enter required data for your application like *App name*, etc. Good, now we have an web application in Azure but if you navigate to `<app-name>.azurewebsites.net` you will see 404 error. So, lets setup deployment for this application and wire it with Travis.
 
@@ -106,11 +106,11 @@ Enter required data for your application like *App name*, etc. Good, now we have
 
 Select *Quickstart* under menu item in your application  sidebar menu. Then select **Node** as your development stack and select **Local Source Control** as a deployment preference
 
-![Azure local source control](/public/images/posts/4/azure-local-source-control.PNG){:height="400px" }
+![Azure local source control](/assets/images/posts/4/azure-local-source-control.PNG){:height="400px" }
 
 Now we need to setup deployment credentials for our app to be able to give access to Travis. To do that go to your application **Settings > Deployment Credentials**
 
-![Azure deployment credentials](/public/images/posts/4/azure-deployment-cred.PNG){:height="400px" }
+![Azure deployment credentials](/assets/images/posts/4/azure-deployment-cred.PNG){:height="400px" }
 
 Fill in the form with desired user name and password. Keep it nearby we will need it on the next step for Travis deployment.
 
@@ -129,7 +129,7 @@ The last thing that should be done is connecting Travis and Azure so that when b
 
 First lets add deployment credentials from Azure to the Travis as an environment variables. Go to your Travis builds for the repository and navigate to the settings from there, select **More Options > Settings**
 
-![Travis settings](/public/images/posts/4/travis-settings.PNG)
+![Travis settings](/assets/images/posts/4/travis-settings.PNG)
 
 Scroll to the **Environment Variables** section and add the following variables:
 

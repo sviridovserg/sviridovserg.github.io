@@ -3,6 +3,13 @@ layout: default
 ---
 
 <div class="page">
-    <h1 class="page-title">{{ page.title }}</h1>
+    <header>
+        {% if page.avatar %}
+        <div class="avatar-wrapper">
+            <img class="avatar" src="{{ site.baseurl }}{{page.avatar}}" alt="" />
+        </div>
+        {% endif %}
+        <h2 class="page-title">{{ page.title }}</h2>
+    </header>
     {{ content }}
 </div>

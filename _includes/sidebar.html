@@ -1,43 +1,70 @@
-<div class="sidebar">
-    <div class="avatar-wrapper">
-        <img class="avatar" src="{{ site.baseurl }}public/images/avatar.jpg" alt="" />
-    </div>
-    <div class="container sidebar-sticky">
-        <div class="sidebar-about">
-            <h1>{{ site.title }}</h1>
-            <p class="lead">Senior Developer @ <a href="http://readify.net">Readify</a></p>
-        </div>
-        <nav class="sidebar-nav">
-            <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-            <br />
-            {% comment %}
-                The code below dynamically generates a sidebar nav of pages with
-                `layout: page` in the front-matter. See readme for usage.
-            {% endcomment %}
-            {% assign pages_list = site.pages %}
-            {% for node in pages_list %}
-                {% if node.title != null %}
-                    {% if node.layout == "page" %}
-                        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-                        <br />
+<!-- Sidebar -->
+<div id="sidebar">
+
+    <!-- Logo -->
+        <h1 id="logo"><a href="#">{{ site.title }}</a></h1>
+
+    <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li class="{% if page.url == site.baseurl %} current{% endif %}"><a href="{{ site.baseurl }}">Home</a></li>
+                <li class="{% if page.url == site.posts.first.url %} current{% endif %}"><a href="{{site.posts.first.url}}">Latest Post</a></li>
+                {% assign pages_list = site.pages %}
+                {% for node in pages_list %}
+                    {% if node.title != null %}
+                        {% if node.layout == "page" %}
+                            <li class="{% if page.url == node.url %} current{% endif %}"><a href="{{ node.url }}">{{ node.title }}</a></li>
+                        {% endif %}
                     {% endif %}
-                {% endif %}
-            {% endfor %}
-            <div class="sidebar-nav-links">
-                <a href="https://github.com/sviridovserg"><img src="{{ site.baseurl }}public/images/github.png" alt="GitHub" /></a>
-            </div>
+                {% endfor %}
+                <!--<li><a href="#">Contact Me</a></li>-->
+            </ul>
         </nav>
-        <p class="copyright">
-            &copy; {{ site.time | date: '%Y' }} Sergei Sviridov
-        </p>
-        <p class="version">
-            Powered by <a href="http://jekyllrb.com">Jekyll</a>
-            and <a href="https://pages.github.com">GitHub Pages</a>
-            <br />
-            Theme based on <a href="http://hyde.getpoole.com">Hyde</a>
-            by <a href="https://twitter.com/mdo">@mdo</a>
-            <br />
-            Version {{ site.github.build_revision }}
-        </p>
-    </div>
+
+    <!-- Text -->
+        <section class="box text-style1">
+            <div class="inner">
+                <p>
+                    <strong>I am</strong>
+                    Senior Developer @ <a href="http://readify.net">Readify</a>
+                </p>
+                <p>
+                    <a href="https://github.com/sviridovserg"><img src="{{ site.baseurl }}assets/images/github.png" alt="GitHub" style="width:24px;"/></a>
+                </p>
+            </div>
+        </section>
+
+
+    <!-- Recent Posts -->
+        <!--<section class="box recent-posts">
+            <header>
+                <h2>Recent Posts</h2>
+            </header>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Feugiat nisl aliquam</a></li>
+                <li><a href="#">Sed dolore magna</a></li>
+                <li><a href="#">Malesuada commodo</a></li>
+                <li><a href="#">Ipsum metus nullam</a></li>
+            </ul>
+        </section>-->
+
+    <!-- Recent Comments -->
+        <!--<section class="box recent-comments">
+            <header>
+                <h2>Recent Comments</h2>
+            </header>
+            <ul>
+                <li>case on <a href="#">Lorem ipsum dolor</a></li>
+                <li>molly on <a href="#">Sed dolore magna</a></li>
+                <li>case on <a href="#">Sed dolore magna</a></li>
+            </ul>
+        </section>-->
+
+
+    <!-- Copyright -->
+        <ul id="copyright">
+            <li>&copy; {{ site.time | date: '%Y' }} Sergei Sviridov.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+
 </div>
