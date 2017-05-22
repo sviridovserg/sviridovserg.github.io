@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Using analyzer to filter unit tests in polymer project"
+abstract: "Filtering unit tests in Polymer project to reduce build time and improve development experience with help of analyzer library from Google"
 date:   2016-09-01 10:00:00
 categories: polymer
-tags: 
+tags:
     - polymer
     - polymer analyzer
     - polymer hydrolisys
@@ -45,7 +46,7 @@ function getChangeset(folderPath, commitHash) {
                 resolve(_.filter(stdout.split('\n'), function(fn) { return fn !== ''; }));
             });
         });
-        
+
     });
 }
 
@@ -85,7 +86,7 @@ function aggregateUnitTests(changeset, unittests, pathToComponent) {
             }
             if (dependencies.length > 0) {
                 Promise.all(_.map(dependencies, function(d) { return getUnitTests(chageset, unittests, d); })).then(function(res) {
-                    var addUnitTests = shouldAdd || _.some(res, function(r) { return r; }); 
+                    var addUnitTests = shouldAdd || _.some(res, function(r) { return r; });
                     if (addUnitTests) {
                         unittests.push(getTestPath(pathToComponent))
                     }
@@ -98,7 +99,7 @@ function aggregateUnitTests(changeset, unittests, pathToComponent) {
                 resolve(addUnitTests);
             }
         });
-    }); 
+    });
 }
 
 {% endhighlight %}

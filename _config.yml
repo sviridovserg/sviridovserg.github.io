@@ -20,7 +20,7 @@ baseurl: /
 # Feed
 copyright: '2016 Sergei Sviridov'
 feed: feed.xml
-avatar: public/images/avatar.png
+avatar: assets/images/avatar.png
 
 # Author
 author:

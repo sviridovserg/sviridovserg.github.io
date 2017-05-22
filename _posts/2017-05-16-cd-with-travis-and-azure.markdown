@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Continuous delivery pipeline using Travis and Azure on the example of React application"
+abstract: "In this blog post we will learn how to build continuous delivery pipeline using Travis platform for continuous integration and Azure platform for managing different environments and hosting for simple React application"
 date:   2017-05-16 16:00:00
 
 desc: Continuous delivery pipeline using Travis and Azure on the example of React application
@@ -129,7 +130,7 @@ The last thing that should be done is connecting Travis and Azure so that when b
 
 First lets add deployment credentials from Azure to the Travis as an environment variables. Go to your Travis builds for the repository and navigate to the settings from there, select **More Options > Settings**
 
-![Travis settings](/assets/images/posts/4/travis-settings.PNG)
+![Travis settings](/assets/images/posts/4/travis-settings.PNG){:width="100%" }
 
 Scroll to the **Environment Variables** section and add the following variables:
 

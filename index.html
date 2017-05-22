@@ -10,8 +10,9 @@ title: Home
                 if they get too long. You can also remove the <p> entirely if you don't
                 need a subtitle.
             -->
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p>{{ post.subtitle }}</p>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p>{{ post.abstract }}</p>
+            <a href="{{ post.url }}">Read More</a>
         </header>
         <div class="info">
         <!--
@@ -51,10 +52,10 @@ title: Home
                 <li><a href="#" class="icon fa-facebook">128</a></li>
             </ul>-->
         </div>
-        {{ post.content }}
     </article>
 
 {% endfor %}
+{% if paginator.total_pages > 1 %}
 <!-- Pagination -->
     <div class="pagination">
         {% if paginator.previous_page %}
@@ -89,3 +90,4 @@ title: Home
         <a href="{{paginator.next_page_path}}" class="button next">Next Page</a>
         {% endif %}
     </div>
+{% endif %}
