@@ -2,7 +2,7 @@
 layout: post
 title:  "How to embed youtube video to markdown file, GitHub or GitLab comments"
 abstract: "In this blog post we will learn how to embed clickable image to the youtube video using youtube url. Also, we check the online tool which will convert youtube video url automatically. "
-date:   2017-05-16 16:00:00
+date:   2017-05-22 16:00:00
 
 desc: How to embed youtube video to markdown file, GitHub or GitLab comments
 keywords: youtube, embed video, GitHub, GitLab, markdown, md, embed youtube to github, insert youtube to github, embed youtube to gitlab, insert youtube to gitlab
