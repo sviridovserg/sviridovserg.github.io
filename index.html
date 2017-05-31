@@ -85,7 +85,7 @@ title: Home
             {% endif %}
             <!--<a href="#">20</a>-->
             <a class="{% if paginator.page == paginator.total_pages %}active{% endif %}"
-                href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.page }}">{{ paginator.total_pages }}</a>
+                href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}">{{ paginator.total_pages }}</a>
         </div>
 
         {% if paginator.next_page_path %}
