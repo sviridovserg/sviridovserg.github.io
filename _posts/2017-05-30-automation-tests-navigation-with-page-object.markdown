@@ -74,7 +74,7 @@ public class Steps {
 
 {% endhighlight %}
 
-Usually steps are implemented in different files, which makes it hard using navigation approach described above. Each step in the scenario should be self contained, so to implement navigation and be able to use different PageObjects we will implement helper function which is going to check if given PageObject represents current page and create it automatically.
+Usually steps are implemented in different files, which makes it hard using navigation approach described above. Each step definition in the scenario should be self contained, so to implement navigation and be able to use different PageObjects we will implement helper function which is going to check if given PageObject represents current page and create it automatically.
 
 {% highlight java %}
 public class BasePage {
