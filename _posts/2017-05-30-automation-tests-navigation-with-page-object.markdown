@@ -18,18 +18,18 @@ tags:
     - Java
 ---
 
-There are two approaches for implementation automated tests: using [TDD][tdd] or using [BDD][bdd]. First leverages test frameworks such as [JUnit][junit], [xUnit][xUnit], [Mocha][mocha], etc., where tests are implemented in one function. This function will contain tests initialization, action and assertion:
+There are two approaches for implementation automated test scenarios: implement steps in code or using [BDD][bdd]. First leverages test frameworks such as [JUnit][junit], [xUnit][xUnit], [Mocha][mocha], etc., where tests are implemented in one function. This function will consist of test initialization, action and assertion. Usually you use [PageObject][page_object] pattern to abstract your page specifics from test implementation details. You create, modify and destroy PageObjects in the same function:
 
 {% highlight java %}
 @Test
 public void testIsActionDone() {
-    MainPage page = new MainPage();
+    MainPage page = new MainPage(driver);
     page.action();
     assertTrue(page.isActionDone);
 }
 {% endhighlight %}
 
-So, you can use [PageObjects][page_object] and navigate between pages the way it is described in Martin Fowler's article. Briefly, each page will return next page if navigation performed
+So, you can use PageObjects to navigate between pages as well, the way it is described in Martin Fowler's article. Briefly, each page will return next page if navigation performed
 
 {% highlight java %}
 @Test
@@ -74,7 +74,7 @@ public class Steps {
 
 {% endhighlight %}
 
-Usually steps are implemented in different files, which makes it hard using navigation approach described above. Each step definition in the scenario should be self contained, so to implement navigation and be able to use different PageObjects we will implement helper function which is going to check if given PageObject represents current page and create it automatically.
+Usually steps are defined in different files, which makes it hard using navigation approach described above. Each step definition in the scenario should be self contained and do not share state between each other. So, to implement navigation and be able to use different PageObjects in steps we will implement helper function which is going to check if given PageObject represents current page and create it automatically.
 
 {% highlight java %}
 public class BasePage {
@@ -88,7 +88,15 @@ public class BasePage {
 }
 {% endhighlight %}
 
-The only requirement for this function to work is each PageObject should implement method `isOnPage`, which returns `true` if PageObject represents current page, otherwise `false`. Now we still can implement navigation in the PageObject, but instead of returning new PageObject use `onPage` function. Thus, implementation for `testIsSubActionDone` scenario using BDD will be
+The only requirement for this function to work is: each PageObject should implement method `isOnPage`, which returns `true` if PageObject represents current page, otherwise `false`. Now PageObject organizes navigation to the next page if needed and waits till the page is loaded? but instead of returning new PageObject we use `onPage` function. Thus, implementation for `testIsSubActionDone` scenario using BDD will be
+
+{% highlight Gherkin  %}
+Scenario: Check that action is done
+    When I am on the main page
+    And I go to the sub page
+    And I perform action
+    Then Action is performed
+{% endhighlight %}
 
 {% highlight java %}
 public class MainSteps {
