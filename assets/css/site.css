@@ -1,3 +1,17 @@
+ul,ol {margin-top:0; margin-bottom:10px; list-style: disc; padding-left: 25px; }
+ul ul,ol ul,ul ol,ol ol {margin-bottom:0}
+.list-unstyled{padding-left:0;list-style:none}
+.list-inline{padding-left:0;list-style:none}
+.list-inline>li{display:inline-block;padding-right:5px;padding-left:5px}
+.list-inline>li:first-child{padding-left:0}
+dl{margin-bottom:20px}
+dt,dd{line-height:1.428571429}
+dt{font-weight:bold}
+dd{margin-left:0}
+
+i[class^="devicon"] {
+  font-size: 60px;
+}
 /* Code */
 code,
 pre {

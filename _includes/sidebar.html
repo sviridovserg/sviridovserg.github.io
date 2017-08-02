@@ -6,7 +6,7 @@
 
     <!-- Nav -->
         <nav id="nav">
-            <ul>
+            <ul class="list-unstyled">
                 <li class="{% if page.url == site.baseurl %} current{% endif %}"><a href="{{ site.baseurl }}">Home</a></li>
                 <li class="{% if page.url == site.posts.first.url %} current{% endif %}"><a href="{{site.posts.first.url}}">Latest Post</a></li>
                 {% assign pages_list = site.pages %}
@@ -26,7 +26,7 @@
             <div class="inner">
                 <p>
                     <strong>I am</strong>
-                    Senior Developer @ <a href="http://readify.net">Readify</a>
+                    Passionate full stack software developer enjoying technology and leadership challenges
                 </p>
                 <p>
                     <a href="https://github.com/sviridovserg"><img src="{{ site.baseurl }}assets/images/github.png" alt="GitHub" style="width:24px;"/></a>
@@ -63,7 +63,7 @@
 
 
     <!-- Copyright -->
-        <ul id="copyright">
+        <ul id="copyright" class="list-unstyled">
             <li>&copy; {{ site.time | date: '%Y' }} Sergei Sviridov.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
 
