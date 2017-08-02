@@ -7,7 +7,7 @@
     <!-- Nav -->
         <nav id="nav">
             <ul class="list-unstyled">
-                <li class="{% if page.url == site.baseurl %} current{% endif %}"><a href="{{ site.url }}">Home</a></li>
+                <li class="{% if page.url == site.url %} current{% endif %}"><a href="{{ site.url }}">Home</a></li>
                 <li class="{% if page.url == site.posts.first.url %} current{% endif %}"><a href="{{site.posts.first.url}}">Latest Post</a></li>
                 {% assign pages_list = site.pages %}
                 {% for node in pages_list %}
