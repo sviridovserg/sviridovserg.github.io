@@ -60,7 +60,7 @@ Great! We have just created a clickable image that can be inserted in the markdo
 
 ## Automatic Conversion
 
-Remembering the markdown specifics to create clickable images is quite hard. So there is a web tool that's doing that automatically. Navigate to the [embedyoutube](embedyoutube.org). You will see
+Remembering the markdown specifics to create clickable images is quite hard. So there is a web tool that's doing that automatically. Navigate to the [embedyoutube](http://embedyoutube.org). You will see
 
 ![embedyoutube.org blank](/assets/images/posts/5/embed-youtube-blank.PNG){:height="400px" style="max-width:100%"}
 
@@ -68,4 +68,4 @@ Just put there your youtube link, alt text and title for the image and you will 
 
 ![embedyoutube.org converted](/assets/images/posts/5/embed-youtube-filled.PNG){:height="400px"}
 
-To conclude, we learned how we can embed youtube links into markdown files and GitHub and GitLab comments using image and link markup, also we learned how to do it automatically using [embedyoutube.org](embedyoutube.org)
+To conclude, we learned how we can embed youtube links into markdown files and GitHub and GitLab comments using image and link markup, also we learned how to do it automatically using [embedyoutube.org](http://embedyoutube.org)
