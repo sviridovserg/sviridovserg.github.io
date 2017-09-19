@@ -15,7 +15,7 @@ title: "Sergei Sviridov's Blog"
 description: "A blog about my development experiences"
 tagline: 'Some random explorations and ideas...'
 url: https://sviridovserg.github.io
-baseurl: /
+baseurl:
 
 # Feed
 copyright: '2016 Sergei Sviridov'
