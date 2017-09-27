@@ -8,7 +8,7 @@ desc: Capturing photo from web application with examples on React
 keywords: Capture photo, Make photo, HTML 5, React, Javascript
 tags:
     - capture photo
-    -  Make photo
+    - Make photo
     - HTML 5
     - React
     - Javascript
