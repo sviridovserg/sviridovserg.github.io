@@ -4,7 +4,7 @@ title:  "Migration from AngularJS to Angular 4"
 abstract: "In this article we'll take a look on migration of SPA from AngularJS to Angular 4 and come up with draft path for it"
 date:   2017-09-26 16:00:00
 
-desc: Capturing photo from web application with examples on React
+desc: Migration from AngularJS to Angular 4
 keywords: AngularJS, Angular 4, Angular 2, Angular, Javascript, Typescript, AngularJS Migration
 tags:
     - AngularJS
